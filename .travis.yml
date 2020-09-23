@@ -12,7 +12,7 @@ before_install:
   - sudo apt-get install -qq python-dev python-pip gcc tesseract-ocr tesseract-ocr-deu ghostscript libjpeg-dev libpng-dev libtiff-dev poppler-utils libreoffice
 install:
   - "pip install -r requirements/testing.txt"
-  - if [[ $DB == mysql ]]; then pip install -q mysql-python; fi
+  - if [[ $DB == mysql ]]; then pip install -q mysqlclient; fi
   - if [[ $DB == postgres ]]; then pip install -q psycopg2; fi
 before_script:
   - mysql -e 'create database mayan_edms;'
