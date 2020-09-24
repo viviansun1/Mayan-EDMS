@@ -60,7 +60,7 @@ django==2.2.15
 Pillow==7.1.2
 PyPDF2==1.26.0
 PyYAML==5.3.1
-celery==4.3.0
+celery==4.3.1
 django-activity-stream==0.8.0
 django-celery-beat==2.0.0
 django-colorful==1.3
