@@ -10,4 +10,4 @@ before_script:
   - docker-compose -f docker/docker-compose.yml up -d --build
 
 script:
-  - docker-compose run "python manage.py test"
+  - python manage.py test
